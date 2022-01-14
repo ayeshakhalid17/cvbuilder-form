@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="form1.css">
+    <link rel="stylesheet" href="progress.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap-4.6.1-dist/bootstrap-4.6.1-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -15,10 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
     <title>Basic Information</title>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#"><img class="image" src="images/logo-png.png" alt="logo"></a>
+        <a class="navbar-brand" href="#"><img class="image" src="images/logo_transparent.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,17 +51,40 @@
             </span>
         </div>
     </nav>
-    <div class="wrap-container">
-        <div class="container mt-5 mb-5">
-            <div class="progress m-3">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
-                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">0%</div>
+    <div class="m-3 ml-5 row align-items-center">
+        <div class="ml-4 mr-5">
+            <h4 style="color:white" class="h-font">Basic Information</h4>
+            <p style="font-weight:500;">This will let the recruiters know your bio data like location etc.</p>
+        </div>
+        <div class="progress1">
+            <div class="circle active">
+              <span class="label">1</span>
+              <span class="title" style="font-weight:500; color:black;">Basic</span>
             </div>
+            <span class="bar"></span>
+            <div class="circle">
+              <span class="label">2</span>
+              <span class="title" style="font-weight:500;">Experience</span>
+            </div>
+            <span class="bar"></span>
+            <div class="circle">
+              <span class="label">3</span>
+              <span class="title" style="font-weight:500;">Education</span>
+            </div>
+            <span class="bar"></span>
+            <div class="circle">
+              <span class="label">4</span>
+              <span class="title" style="font-weight:500;">Skills</span>
+            </div>
+            <span class="bar"></span>
+            <div class="circle">
+              <span class="label">5</span>
+              <span class="title" style="font-weight:500;" >Summary</span>
+            </div>
+          </div>
+    </div>
+    <div class="container">
             <form method="POST" action="save_basic.php" enctype="multipart/form-data">
-                <div class="heading">
-                    <h4 style="color:white" class="h-font">Basic Information</h4>
-                    <p>This will let the recruiters know your bio data and other important details.</p>
-                </div>
                 <div class="row">
                     <div class="col-md-4 d-flex justify-content-center flex-column align-items-center">
                         <div class="rectangle">
@@ -95,8 +119,8 @@
                                         class="form-control" placeholder="Web Developer" name="profession" required></div>
                                 <div class="col-md-12"><label class="labels">Linkedin Profile</label><input type="url"
                                         class="form-control" name="linkedin" placeholder="https://www.linkedin.com/in/ayesha-khalid-42473a196/"></div>
-                                <div class="col-md-12"><label class="labels">GitHub Account</label><input type="url"
-                                        class="form-control" name="github" placeholder="https://github.com/ayeshakhalid17"\>
+                                <div class="col-md-12"><label class="labels">GitHub Account</label><input type="text"
+                                        class="form-control" name="github" placeholder="ayeshakhalid17"\>
                                 </div>
                             </div>
                             <div class="mt-5 text-center"><button class="btn btn-primary profile-button align-left"
@@ -107,8 +131,6 @@
                 </div>
             </form>
         </div>
-    </div>
-    </div>
     <footer class="footer" id="footer">
         <div class="container">
             <div class="row justify-content-center">

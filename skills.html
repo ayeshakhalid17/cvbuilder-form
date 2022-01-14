@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="form1.css">
+    <link rel="stylesheet" href="progress.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap-4.6.1-dist/bootstrap-4.6.1-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -18,7 +20,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#"><img class="image" src="images/logo-png.png" alt="logo"></a>
+        <a class="navbar-brand" href="#"><img class="image" src="images/logo_transparent.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,68 +52,91 @@
             </span>
         </div>
     </nav>
-    <div class="wrap-container">
-        <div class="container rounded mt-5 mb-5">
-            <div class="progress m-3">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+    <div class="m-3 ml-5 row align-items-center">
+        <div class="ml-4">
+            <h4 style="color:white" class="h-font">Skills</h4>
+            <p style="font-weight:500;">Enter relevant skills that will help you get recruited.</p>
+        </div>
+        <div class="progress1">
+            <div class="circle done">
+              <span class="label">1</span>
+              <span class="title" style="font-weight:500;">Basic</span>
             </div>
+            <span class="bar done"></span>
+            <div class="circle done">
+              <span class="label">2</span>
+              <span class="title" style="font-weight:500;">Experience</span>
+            </div>
+            <span class="bar half"></span>
+            <div class="circle done">
+              <span class="label">3</span>
+              <span class="title" style="font-weight:500;">Education</span>
+            </div>
+            <span class="bar"></span>
+            <div class="circle active">
+              <span class="label">4</span>
+              <span class="title" style="font-weight:500;">Skills</span>
+            </div>
+            <span class="bar"></span>
+            <div class="circle">
+              <span class="label">5</span>
+              <span class="title" style="font-weight:500;" >Summary</span>
+            </div>
+          </div>
+    </div>
+        <div class="container rounded mt-5 mb-5">
             <form method="POST" action="save_skills.php" enctype="multipart/form-data" class="heading">
-                <div>
-                    <h4 style="color:white" class="h-font">Skills</h4>
-                    <p>This is the most important part! Enter relevant skills that will help you get recruited.</p>
-                </div>
-                <div class="row align-items-center">
+                <div class="row align-items-center mb-2">
                     <div class="col-md-6">
                         <label class="labels">Name of Skill</label>
                         <input type="text" class="form-control" placeholder="MERN Stack Development" name="skill_1">
                     </div>
                     <div class="col-md-6">
-                        <label for="customRange1">Expertise of Skill</label>
+                        <label for="customRange1" class="labels">Expertise of Skill</label>
                         <input type="range" class="custom-range md-6" min="0" max="100" step="20" id="customRange1"
                             class="md-6" value="0">
                     </div>
                 </div>
-                <div class="row align-items-center">
+                <div class="row align-items-center mb-2">
                     <div class="col-md-6">
                         <label class="labels">Name of Skill</label>
                         <input type="text" class="form-control" placeholder="Cyber Security" name="skill_1">
                     </div>
                     <div class="col-md-6">
-                        <label for="customRange1">Expertise of Skill</label>
+                        <label for="customRange1" class="labels">Expertise of Skill</label>
                         <input type="range" class="custom-range md-6" min="0" max="100" step="20" id="customRange1"
                             class="md-6" value="0">
                     </div>
                 </div>
-                <div class="row align-items-center">
+                <div class="row align-items-center mb-2">
                     <div class="col-md-6">
                         <label class="labels">Name of Skill</label>
                         <input type="text" class="form-control" placeholder="Logo Designing" name="skill_1">
                     </div>
                     <div class="col-md-6">
-                        <label for="customRange1">Expertise of Skill</label>
+                        <label for="customRange1" class="labels">Expertise of Skill</label>
                         <input type="range" class="custom-range md-6" min="0" max="100" step="20" id="customRange1"
                             class="md-6" value="0">
                     </div>
                 </div>
-                <div class="row align-items-center" id="skill_4">
+                <div class="row align-items-center mb-2" id="skill_4">
                     <div class="col-md-6">
                         <label class="labels">Name of Skill</label>
                         <input type="text" class="form-control" placeholder="Digital Marketing" name="skill_1">
                     </div>
                     <div class="col-md-6">
-                        <label for="customRange1">Expertise of Skill</label>
+                        <label for="customRange1" class="labels">Expertise of Skill</label>
                         <input type="range" class="custom-range md-6" min="0" max="100" step="20" id="customRange1"
                             class="md-6" value="0">
                     </div>
                 </div>
-                <div class="row align-items-center" id="skill_5">
+                <div class="row align-items-center mb-2" id="skill_5">
                     <div class="col-md-6">
                         <label class="labels">Name of Skill</label>
                         <input type="text" class="form-control" placeholder="SEO" name="skill_1">
                     </div>
                     <div class="col-md-6">
-                        <label for="customRange1">Expertise of Skill</label>
+                        <label for="customRange1" class="labels">Expertise of Skill</label>
                         <input type="range" class="custom-range md-6" min="0" max="100" step="20" id="customRange1"
                             class="md-6" value="0">
                     </div>
@@ -123,8 +148,6 @@
                         name="upload">Next : Summary</button></div>
             </form>
         </div>
-    </div>
-    </div>
     <footer class="footer" id="footer">
         <div class="container">
             <div class="row justify-content-center">
