@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+session_start();
 if (isset($_POST['upload'])){
 $first_name=mysqli_real_escape_string($conn,$_POST['first_name']);
 $last_name=mysqli_real_escape_string($conn,$_POST['last_name']);
@@ -17,6 +18,7 @@ $folder="images/".$picturename;
 $insert_q="INSERT INTO `cvbuilder`.`basic` (first_name,last_name,contact,city,country,zip,email,profession,linkedin,github,picture) VALUES ('$first_name','$last_name','$contact','$city','$country','$zip','$email','$profession','$linkedin','$github','$picturename')";
 $insertion=mysqli_query($conn, $insert_q);
 if (move_uploaded_file($picturetmp_name,$folder)) {
-	header("Location:skills.html");
+	header("Location:workExperience.php");
+	$_SESSION['email']=$_POST['email'];
 }
 }
